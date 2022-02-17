@@ -17,10 +17,11 @@ let GoogleStrategy = require('passport-google-oauth20').Strategy;
 let findOrCreate = require("mongoose-findorcreate") //making the OAuth docs more than just psuedo code
 
 const mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://'+process.env.username+':'+process.env.password+'@cluster0.tl0pg.mongodb.net/blogPostsDB?retryWrites=true&w=majority'
+require('dotenv').config();      
+mongoose.connect( process.env.MONGODB_URI, 
 
 
-, {
+ {
   useNewUrlParser: true
 });
 
