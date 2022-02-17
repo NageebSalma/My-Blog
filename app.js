@@ -18,7 +18,7 @@ let findOrCreate = require("mongoose-findorcreate") //making the OAuth docs more
 
 const mongoose = require('mongoose');
 require('dotenv').config();      
-mongoose.connect('mongodb+srv://postsOfSalma2:0505407347Mony@cluster0.tl0pg.mongodb.net/blogPostsDB?retryWrites=true&w=majority'
+mongoose.connect('mongodb+srv://'+process.env.username+':'+process.env.password+'@cluster0.tl0pg.mongodb.net/blogPostsDB?retryWrites=true&w=majority'
 
 
 , {
