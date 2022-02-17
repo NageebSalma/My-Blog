@@ -18,10 +18,10 @@ let findOrCreate = require("mongoose-findorcreate") //making the OAuth docs more
 
 const mongoose = require('mongoose');
 require('dotenv').config();      
-mongoose.connect( process.env.MONGODB_URI, 
+mongoose.connect('mongodb+srv://postsOfSalma2:0505407347Mony@cluster0.tl0pg.mongodb.net/blogPostsDB?retryWrites=true&w=majority'
 
 
- {
+, {
   useNewUrlParser: true
 });
 
