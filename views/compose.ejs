@@ -1,0 +1,36 @@
+<%- include("partials/header") -%>
+
+<h1>Compose here</h1>
+<form class="" action="/" method="post">
+
+  <div class="mb-3">
+    <label class="form-label">Post Image</label>
+    <input type="text" name="thumbimgg" placeholder="insert thumbnail img source here" >
+    <input type="text" name="realimgg" placeholder="insert actual img source here" >
+    <input type="text" name="datee" placeholder="insert post's ddate">
+    <input type="text" name="readingTimee" placeholder="insert reading time">
+    <label class="form-label">Title</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1"
+    placeholder="" name="titlePost">
+  </div>
+  <br>
+  <div class="mb-3">
+    <label class="form-label">Body</label>
+   
+     <textarea class="form-control" rows="5"
+     columns="7" name="bodyPost" name="content" id="editor">
+      &lt;p&gt;This is some sample content.&lt;/p&gt;
+  </textarea> | safe 
+  <script>
+      ClassicEditor
+          .create( document.querySelector( '#editor' ) )
+          .catch( error => {
+              console.error( error );
+          } );
+  </script>
+  </div>
+<br>
+<button type="submit" class="btn btn-primary">Publish</button>
+
+</form>
+<%- include("partials/footer") -%>

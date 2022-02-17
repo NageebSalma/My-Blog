@@ -1,0 +1,17 @@
+<%- include("partials/header") -%>
+
+<div class="container post-bg">
+  <img class="realimg" src=<%= realimgg %> >
+<br>
+<h1 class="titlee poststitlee"> <%= titlee  %> </h1>
+<% let newBodyy = bodyy.split("~") 
+  for(comp of newBodyy){
+
+    %>
+<div class="bodyy postsbodyy"> <%- comp %></div>
+<% } %>
+<h4 class="date"><%= datee %></h4>
+</div>
+
+
+<%- include("partials/footer") -%>

@@ -1,0 +1,37 @@
+<%- include("partials/header.ejs") -%>
+<!-- <h1>Home</h1> -->
+
+<br>
+<br>
+<div  id="'home">
+  <div class="sideDiv">
+  
+    <h2>Video Of The Week</h2>
+    <br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/8t32wuv1GjQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/qwa-DD1bUpk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div> -->
+</div>
+<div class="home-posts-container">
+  <%
+  for(let i=arrOfPosts.length-1; i >= 0; i--){
+    %>
+   <div class="postCard">
+    <a href="/posts/<%= arrOfPosts[i].id %>">  <img class="thumbnail" src=<%= arrOfPosts[i].thumbimg %> ></a>
+    <a href="/posts/<%= arrOfPosts[i].id %>"> <h2 class="htitlee titlee"> <%= arrOfPosts[i].title %></h1></a>
+   <br>
+    <!-- <p class="hbodyy bodyy"> <%= arrOfPosts[i].body.substr(0,100)+" ..." %></p> -->
+    <!-- <a href="/posts/<%= arrOfPosts[i].id %>">Read more</a> -->
+    <h4>A <%=arrOfPosts[i].readingTime %> minutes read <i class="fas fa-clock"></i></h4>
+    <br>
+<hr>
+   </div>
+    
+  <% } %>
+</div>
+ 
+
+
+
+</div>
+  
+<%- include("partials/footer.ejs") -%>

@@ -1,0 +1,345 @@
+html, body {
+  margin: 0;
+}
+body{
+  margin: 0;
+  background-color: #d2232e;
+  background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  background-color: #ffffff;
+min-height: 100vh;
+}
+.postCard{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+.poststitlee , .postsbodyy , .realimg{
+  width: 70vw;
+  position:relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.poststitlee{
+  margin-top: 5vh;
+}
+.postsbodyy{
+  white-space: pre-wrap;
+  font-size: 1.9rem;
+  font-family: Charter,Georgia,Times,Serif;
+  
+  
+}
+
+h4{
+  font-size: 1.5rem;
+  margin-top:-2vh;
+}
+.container-fluid {
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+    
+}
+/* .navbar {
+  font-weight: 500;
+  background-color: #d2232e;
+    /* border: 0;
+    border-radius: 0;
+    margin-bottom: 0; */
+/* 
+    padding-top: 1vh;
+    letter-spacing: 0.5rem;
+    position:fixed;
+    width:100vw;
+    /* left: 50%; */
+    /* z-index: 1;
+    max-height: 10vh; */ 
+  /* transform: translateX(-50%); */
+
+
+/* 
+.navbar-brand{
+  color:beige !important;
+  font-family: Harriet,Georgia,Times,Serif;
+  margin-left: 2vw !important;
+}
+.navbar-nav  li a{
+  color: white !important;
+  font-family: Harriet,Georgia,Times,Serif;
+  margin-right: 2vw;
+}
+.navbar-nav  li a:hover {
+    color: #ffffff !important;
+}
+
+.navbarlogo{
+  height: 10vh;
+  width:auto;
+}  */
+
+.sideDiv{
+  /* position: fixed; */
+  /* padding: 10vh 20vw 10vh 20vw; */
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+
+  height: 80vh;
+  /* padding:1.5rem; */
+  background-color: rgba(0, 0, 0, 0);
+  /* right: 5vw; */
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  color:rgba(0, 0, 0, 0.493);
+  letter-spacing: 0.5rem;
+  /* writing-mode: vertical-lr; */
+ 
+  /* text-orientation: sideways-right; */
+  /* text-orientation: mixed; */
+
+ 
+}
+iframe{
+  /* position: fixed; */
+  /* right: 5vw; */
+  /* transform: translateX(-40%); */
+  width:30vw;
+  height:40vh;
+}
+
+
+.postCard , .sideDiv{
+  margin-top: 10vh;
+
+}
+
+
+.thumbnail{
+  height: 40vh;
+  width: 40vw;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.realimg{
+  width:100%;
+  height:70vh;
+  object-fit: cover;
+  margin-top: 15vh;
+}
+.titlee{
+  margin-top:6vh;
+  color:black;
+  font-family: Harriet,Georgia,Times,Serif;
+    font-weight: bold;
+}
+.htitlee , .hbodyy  , h4{
+  width:55vw;
+  /* position:relative;
+  left: 35%;
+  transform: translateX(-65%); */
+}
+.hbodyy{
+  font-size: 1.5rem;
+    line-height: 1;
+  color: #595959;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.03rem;
+  text-transform: uppercase;
+  
+}
+.htitlee:hover{
+  color: #ff6b3a;
+}
+a:hover{
+  text-decoration: none;
+}
+
+.aboutparagraph{
+  padding: 3rem;
+  border-radius: 1rem;
+  color:rgb(226, 226, 226);
+  background-color: #110506;
+  width:60vw;
+  font-size:2rem;
+  font-family: 'Raleway', sans-serif;
+  margin-top: 15vh;
+  position: relative;
+  left: 15vw;
+  letter-spacing: 0.3rem;
+}
+
+.contact{
+  padding: 5rem 0 5rem 0;
+  border-radius: 1rem;
+  background-color: #110c0c;
+  width:40vw;
+  margin-top: 15vh;
+  position: relative;
+  left: 25vw;
+  letter-spacing: 0.3rem;
+  text-align: center;
+
+}
+.contact i{
+  color:white;
+  margin-right: 2vw;
+  margin-left: 2vw;
+  font-size:4rem;
+}
+/* .footer-padding {
+	padding-bottom: 60px;
+} */
+
+.footer {
+ position: relative;
+bottom:0;
+  margin-bottom: 0;
+	text-align: center;
+	width: 90vw;
+  left:5vw;
+	height:5vh;
+	background-color: #000000;
+}
+
+.footer p {
+  position: relative;
+	font-size: 12px;
+  color: #fff;
+  margin-bottom: 0;
+  /* padding-bottom: 2vh; */
+}
+
+.bodyy, .postsbodyy{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 30vh;
+}
+body:last-child{
+  margin-bottom: 30vh;
+}
+.post-bg{
+  background: rgb(250, 250, 250);
+}
+.home-posts-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgb(238, 237, 237);
+  margin-top: 25vh;
+}
+.sideDiv{
+  margin-top: 15vh;
+  position: static;
+  margin-bottom: -10vh;
+}
+iframe{
+  position: relative;
+  width: 100%;
+  height: 70%;
+
+}
+#home{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar{
+  font-size: 1.5rem;
+  margin-top : 0;
+  /* display: flex;
+  justify-content:space-between;
+  align-items: center; */
+  font-weight: 500;
+  background-color: #EA5C2B;
+  min-height: 10vh;
+  position: fixed;
+  width: 100vw;
+  /* left: 5vw; */
+  z-index : 1;
+  padding-left: 10vw;
+  padding-right: 10vw;
+    /* border: 0;
+    border-radius: 0;
+    margin-bottom: 0; */
+
+}
+/* .collapse{
+  width:50% !important;
+} */
+
+
+@media only screen and (max-width: 600px){
+  .navbar{
+    width: 100vw;
+  }
+  .realimg{
+    width:85vw;
+    height:50vh;
+    object-fit: cover;
+    margin-top: 20vh;
+  }
+  .thumbnail{
+    height: 40vh;
+    width :70vw;
+    object-fit: cover;
+    position: static;
+
+  }
+  #home{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .home-posts-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* .postCard h2{
+    text-align: center;
+  } */
+ 
+  .postCard{
+    justify-content: space-around;
+    align-items: center;
+  }
+  .postCard h2{
+    width: 100%;
+    text-align: center;
+  }
+  
+  .sideDiv{
+    position: static;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 5vh;
+   
+  }
+  iframe{
+    width:100%;
+    height:60vh;
+    margin-top:0;
+    margin-bottom: 20vh;
+  }
+  .sideDiv h2{
+    width: 100%;
+    opacity: 0;
+    
+  }
+  body:last-child{
+    margin-bottom: 10vh;
+  }
+  
+}
