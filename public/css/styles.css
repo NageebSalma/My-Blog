@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,300&display=swap');
 html, body {
   margin: 0;
 }
@@ -229,6 +230,10 @@ iframe{
   padding-right: 10vw;
 
 
+}
+.navbar-brand{
+  font-size: 1.9rem;
+  font-family: 'Source Code Pro', monospace;
 }
 /* .collapse{
   width:50% !important;
