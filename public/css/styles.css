@@ -146,12 +146,9 @@ a:hover{
 }
 .contact i{
   color:white;
-  margin-bottom: 2vh;
-  margin-top: 2vh;
+  margin-bottom: 1vh;
+  margin-top: 1vh;
   font-size:4rem;
-}
-.contact i:hover{
-  color : #f16537;
 }
 /* .footer-padding {
 	padding-bottom: 60px;
